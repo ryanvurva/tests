@@ -22,15 +22,29 @@ $base-font-family: sans-serif;
 }
 
 .Copy {
-  animation-name: appear4;
+  animation-name: appear4, slideUp;
   animation-duration: 1s;
-  animation-delay: 5s;
+  animation-delay: 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
   @keyframes appear4 {
     from {opacity: 0;}
     to {opacity: 1;}
+  }
+
+  @keyframes slideUp {
+    from {top: 30px;}
+    to {top: 0px;}
+  }
+
+  @keyframes flip-horizontal-top {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
   }
 }
 
@@ -132,15 +146,15 @@ $base-font-family: sans-serif;
 
   @keyframes become2 {
     0% {opacity: 0;}
-    50% {opacity: .9;}
-    75% {opacity: .4;}
-    100% {opacity: .9;}
+    50% {opacity: .7;}
+    75% {opacity: .2;}
+    100% {opacity: .7;}
   }
 }
 
 .disappear {
   animation-name: vanish, shrink;
-  animation-duration: 500ms;
+  animation-duration: 550ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 3s;
