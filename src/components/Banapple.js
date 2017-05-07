@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import Apple from '../images/apple.png'
 
-class Footer extends Component {
+class Banapple extends Component {
   render () {
-    return <footer>
-      {/* <img src={Apple} alt='an apple' /> */}
+    return <div className='Banapple'>
       <div className='container'>
         <div className='copy'>&copy; 2017 -</div>
         <div className='banana'>
@@ -16,11 +14,11 @@ class Footer extends Component {
           <div className='a'>A</div>
           <div className='pple'>PPLE</div>
         </div>
-        <div className='designs'>designs</div>
+        <div className='designs'>garage</div>
       </div>
       <span className='shadow' />
-    </footer>
+    </div>
   }
 }
 
-export default Footer
+export default Banapple

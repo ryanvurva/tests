@@ -1,0 +1,60 @@
+@import 'utility';
+
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+.ForwardHypermedia {
+  header {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    margin-left: 1em;
+
+    nav h1 {
+      display: flex;
+
+      .first-bracket {
+
+      }
+
+      .forward {
+        display: none;
+      }
+
+      .line-1{
+        position: relative;
+        top: 50%;
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255,255,255,.75);
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);
+      }
+
+      .anim-typewriter{
+        animation: typewriter 4s steps(44) 1s 1 normal both
+      }
+      @keyframes typewriter{
+        from{width: 0; display: none;}
+        to{width: 24em; display: block;}
+      }
+
+      .second-bracket {
+
+      }
+
+      .hyphen {
+        visibility: hidden;
+      }
+
+      .third-bracket {
+        display: none;
+      }
+
+      .ypermedia {
+        display: none;
+      }
+    }
+  }
+}
