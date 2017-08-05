@@ -9,35 +9,39 @@
     margin-left: 1em;
 
     nav h1 {
+      margin: 0;
       display: flex;
 
       .first-bracket {
-
+        // color: white;
       }
 
       .forward {
-        display: none;
+        // display: none;
       }
 
       .line-1{
-        position: relative;
-        top: 50%;
-        width: 24em;
-        margin: 0 auto;
-        border-right: 2px solid rgba(255,255,255,.75);
-        font-size: 180%;
+        // position: relative;
+        // top: 50%;
+        width: 3.6em;
+        margin: 0;
+        // border-right: 2px solid rgba(255,255,255,.75);
+        // font-size: 180%;
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
       }
 
-      .anim-typewriter{
-        animation: typewriter 4s steps(44) 1s 1 normal both
+      .anim-typewriter {
+        // display: none;
+        animation: typewriter 500ms steps(8) 1s 1 normal both;
+        animation-fill-mode: forward;
       }
-      @keyframes typewriter{
-        from{width: 0; display: none;}
-        to{width: 24em; display: block;}
+
+      @keyframes typewriter {
+        from {width: 0; display: none;}
+        to {width: 3.6em; display: block;}
       }
 
       .second-bracket {
